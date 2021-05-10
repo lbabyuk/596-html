@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.logo {
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: bold;
+        border: 2px solid salmon;
+        padding: 10px;
+        margin: 20px;
+        font-family: 'Courier New', cursive;
+        position: fixed;
+        top: 20px;
+}
+
+.product-list {
+    display: flex;
+    background: linear-gradient(0deg, #301d55, #161721 100%);
+}
+
+.product-list img {
+    margin-top: 100px;
+    width: 400px;
+}
+.heading {
+    background-image: url(../img/bird.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+}
+
+#contacts{
+    background-color: #37942e65;
+}
+
+h2:hover {
+    text-decoration: underline;
+}
+
+h1::first-letter,
+h2::first-letter{
+    font-style: italic;
+    color: yellow;
+}
