@@ -11,7 +11,7 @@
     <header id="home">
         <div class="heading">
              <div class="logo">Stickerz</div>
-        <nav>
+        <nav class="menu">
             <a href="#home">Home</a>
             <a href="#products">Products</a>
             <a href="contacts">Contacts</a>
@@ -31,8 +31,8 @@
                     <h3>Bird</h3>
                     <p> jhfhgfhgfhfh......</p>
                     <div>
-                        <button>Info</button>
-                        <button>Buy now</button>
+                        <button class="button card-button">Info</button>
+                        <button class="button card-button">Buy now</button>
                         </div>
                 </article>
                
@@ -41,8 +41,8 @@
                     <h3>Bird2</h3>
                     <p> jhfhgfhgfhfh......</p>
                     <div>
-                        <button>Info</button>
-                        <button>Buy now</button>
+                        <button class="button card-button">Info</button>
+                        <button class="button card-button">Buy now</button>
                         </div>
                 </article>
             
@@ -51,8 +51,8 @@
                     <h3>Bird3</h3>
                     <p> jhfhgfhgfhfh......</p>
                     <div>
-                        <button>Info</button>
-                        <button>Buy now</button>
+                        <button class="button card-button" >Info</button>
+                        <button class="button card-button">Buy now</button>
                         </div>
                 </article>
            </div> 
@@ -60,13 +60,17 @@
             <footer>
                 <h2 id="contacts"> Contact us</h2>
                 <form method="POST" action="">
-                 <label>
-                    Your name: <input type="text" placeholder="Your name" name="User name">
+                 <label for="user-name">
+                    Your name:
                 </label>
-                <label>
-                    Your email: <input type="text" placeholder="Your email" name="User email">
+                     <input id="user-name" type="text" placeholder="Your name" name="User name">
+                     <label for="user email">
+                    Your email:
+                    </label>
+                     <input id="user email" type="text" placeholder="Your email" name="User email">
                 </label>
-                <input type="submit">
+                <br>
+                <input class="button card-button" type="submit">
                 </form>
             </footer>   
 </body>
