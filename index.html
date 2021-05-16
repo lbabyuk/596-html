@@ -1,14 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stickerz</title>
-    <link rel="icon" href="bird.jpg">
+    <link rel="icon" href="Angrybird.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-    <header id="home">
+    <header id="home" class="container">        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+              <a class="navbar-brand" href="#">Stickerz</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="#home">Home</a>
+                    <a class="nav-link" href="#products">Products</a>
+                    <a class="nav-link" href="#contacts">Contacts</a>
+                    <a class="nav-link" href="cart.html">Cart</a>
+                </div>
+              </div>
+            </div>
+        </nav>    
+    <!--<header id="home">
         <div class="heading">
              <div class="logo">Stickerz</div>
         <nav class="menu">
@@ -16,15 +36,70 @@
             <a href="#products">Products</a>
             <a href="contacts">Contacts</a>
             <a href="cart.html">Cart</a>
-        </nav>
-            </div> 
-                <div class="banner">
-                    <h1>Stickerz</h1>
-                    <button>Buy now</button>
-        </div>   
+        </nav>-->
+        <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/angrybird.png" class="d-block w-50 m-auto" alt="Angrybird">
+              </div>
+              <div class="carousel-item">
+                <img src="img/littlebirds.png" class="d-block w-50 m-auto" alt="Littlebirds">
+              </div>
+              <div class="carousel-item">
+                <img src="img/threebirds.png" class="d-block w-50 m-auto" alt="Threebirds">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div> 
+     <!--<div class="banner">
+        <h1>Stickerz</h1>
+         <button>Buy now</button>
+        </div>-->   
     </header>
-        <main>
-            <h2 id="products">Products</h2>
+        <main class="container">
+                <h2 id="products">Products</h2>
+                <div class="product-list row">
+                    <article class="card col-12 col-sm-6 col-md-4 col-lg-3" >
+                        <img src="img/angrybird.png" class="card-img-top" alt="Angrybird">
+                        <div class="card-body">
+                          <h5 class="card-title">Angrybird</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#productInfoModal">Info</button>
+                          <button class="btn btn-primary">Buy now</button>
+                        </div>
+                    </article>
+                    <article class="card col-12 col-sm-6 col-md-4 col-lg-3" >
+                        <img src="img/littlebirds.png" class="card-img-top" alt="littlebirds">
+                        <div class="card-body">
+                          <h5 class="card-title">Littlebirds</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <button class="btn btn-info">Info</button>
+                          <button class="btn btn-primary">Buy now</button>
+                        </div>
+                    </article>
+                    <article class="card col-12 col-sm-6 col-md-4 col-lg-3" >
+                        <img src="img/threebirds.png" class="card-img-top" alt="Threebirds">
+                        <div class="card-body">
+                          <h5 class="card-title">Threebirds</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <button class="btn btn-info">Info</button>
+                          <button class="btn btn-primary">Buy now</button>
+                        </div>
+                    </article>
+                </div>
+           <!-- <h2 id="products">Products</h2>
             <div class="Product-list">
                 <article>
                     <img src="img/bird.jpg" alt="bird">
@@ -55,11 +130,27 @@
                         <button class="button card-button">Buy now</button>
                         </div>
                 </article>
-           </div> 
+           </div> -->
         </main> 
-            <footer>
+            <footer class="comtainer">
                 <h2 id="contacts"> Contact us</h2>
-                <form method="POST" action="">
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+               <!-- <form method="POST" action="">
                  <label for="user-name">
                     Your name:
                 </label>
@@ -71,7 +162,10 @@
                 </label>
                 <br>
                 <input class="button card-button" type="submit">
-                </form>
-            </footer>   
+                </form>-->
+            </footer>
+            
+            
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">         
 </body>
 </html>
